@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3.0f;
+    ][SerializedField] private float speed = 3.0f;
     private Rigidbody enemyRb;
-    private GameObject player;
+    private const string Playertag = "Player":
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find(Playertag);
         enemyRb = GetComponent<Rigidbody>();
     }
 
